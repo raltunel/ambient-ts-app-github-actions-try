@@ -17,6 +17,7 @@ jobs:
         with:
           owner: raltunel
           repo: playwright-metamask-gh-action
+          ref: master
           github_token: ${{ secrets.MY_TOKEN }}
           workflow_file_name: RunPlaywright.yml
           client_payload: '{"url": "deploy-preview-${{ github.event.number }}--proven-cicd-playground.netlify.app"}'
