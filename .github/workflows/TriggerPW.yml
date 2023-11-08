@@ -21,7 +21,7 @@ jobs:
           github_token: ${{ secrets.MY_TOKEN }}
           workflow_file_name: RunPlaywright.yml
           # client_payload: '\"{\"url\":\"deploy-preview-${{ github.event.number }}--proven-cicd-playground.netlify.app\"}\"'
-          client_payload: '{url: \"deploy-preview-${{ github.event.number }}--proven-cicd-playground.netlify.app\"}'
+          client_payload: '{"url": "deploy-preview-${{ github.event.number }}--proven-cicd-playground.netlify.app"}'
           wait_interval: 600
           trigger_workflow: true
           wait_workflow: true
