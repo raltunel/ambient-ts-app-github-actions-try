@@ -17,7 +17,7 @@ jobs:
         with:
           owner: raltunel
           repo: playwright-metamask-gh-action
-          github_token: ${{ secrets.GITHUB_PERSONAL_ACCESS_TOKEN }}
+          github_token: ${{ secrets.MY_TOKEN }}
           workflow_file_name: RunPlaywright.yml
           ref: deploy-preview-${{ github.event.number }}--proven-cicd-playground.netlify.app
           wait_interval: 600
