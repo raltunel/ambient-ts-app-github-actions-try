@@ -23,7 +23,7 @@ interface propsIF {
 }
 
 function ChatPanel(props: propsIF) {
-    // branch protection check 222
+    // branch protection check 2222
 
     const { isFullScreen } = props;
     const {
